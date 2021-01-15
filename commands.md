@@ -287,7 +287,7 @@
   pm2 start -i max index.js
 ```
 
-#### pm2 env config
+#### env config
 
 ```javascript
   env: {
@@ -296,6 +296,49 @@
   env_production: {
     "NODE_ENV": "production", // pm2 start pm2.config.js --env production
   }
+```
+
+### Mongodb
+
+```bash
+# install
+  sudo apt-get update
+  sudo apt-get install mongodb
+
+# start as background process
+  sudo mongod --auth --port 27017 --dbpath /var/lib/mongodb --fork --logpath /var/log/mongodb/mongodb.log
+
+# auth login
+  mongo --port 27017 -u [user_name] -p [user_pwd] --authenticationDatabase [user_role]
+```
+
+### MySQL
+
+```bash
+# install
+  sudo apt install mysql-server
+
+# start
+  sudo service mysql start
+
+# login
+  sudo mysql -u root -p
+```
+
+#### syntax
+
+```sql
+-- alter default character
+  ALTER DATABASE `db_name` charset=`utf8mb4`
+
+-- select
+  SELECT * FROM `db_name`.`table_name`
+
+-- update
+  UPDATE `db_name`.`table_name` SET `field_1` = `value_1`, `field_2` = `value_2` WHERE ('id' = '5');
+
+-- insert
+  INSERT INTO `db_name`.`table_name` (`field_1`, `field_2`, ...) VALUES ('value_1', 'value_2', ...);
 ```
 
 ### Reference
