@@ -2,4 +2,5 @@
 
 * [Table of contents](README.md)
 * [Commands](commands.md)
+* [Javascript](javascript.md)
 
