@@ -16,3 +16,7 @@
 
 ![](.gitbook/assets/sql_join_3.jpg)
 
+### RWD
+
+![](.gitbook/assets/types-of-responsive-tables.gif)
+
