@@ -5,5 +5,6 @@
 * [Javascript](javascript.md)
 * [Cheat Sheet](cheat-sheet.md)
 * [Debug](debug.md)
+* [New](new.md)
 * [Leetcode](leetcode.md)
 
