@@ -2,15 +2,19 @@
 
 ### Git
 
+#### reset file to unmodified state
+
 ```bash
-# reset file to unmodified state
-  git checkout [file]
+git checkout [file]
+```
 
-# switch to branch
-  git checkout -b [branch_name]
+#### switch to branch
 
-# ------
+```bash
+git checkout -b [branch_name]
+```
 
+```bash
 # pick up other commits to merge
   git cherry-pick [commit_1] [commit_2] ...
 
@@ -207,6 +211,9 @@
 
 # rsync
   rsync -r --exclude [exclude_folder] [source_path] [target_path]
+  
+# nginx test
+  sudo nginx -t
 ```
 
 ### Angular
@@ -339,6 +346,35 @@
 
 -- insert
   INSERT INTO `db_name`.`table_name` (`field_1`, `field_2`, ...) VALUES ('value_1', 'value_2', ...);
+```
+
+### Redis
+
+#### install
+
+```bash
+wget https://download.redis.io/releases/redis-stable.tar.gz
+tar xzf redis-stable.tar.gz
+cd redis-stable
+make
+```
+
+#### run server in background
+
+```bash
+ redis-server --daemonize yes
+```
+
+#### redis-cli
+
+```bash
+src/redis-cli
+```
+
+#### remove redis background process
+
+```bash
+pkill -u $USER redis-server
 ```
 
 ### Reference
