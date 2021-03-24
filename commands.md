@@ -348,6 +348,41 @@ git checkout -b [branch_name]
   INSERT INTO `db_name`.`table_name` (`field_1`, `field_2`, ...) VALUES ('value_1', 'value_2', ...);
 ```
 
+### 
+
+### LEMP
+
+### linux + nginx + mysql + php
+
+```bash
+# nginx
+  sudo apt-get update
+  sudo apt-get install nginx
+
+# mysql
+  sudo apt-get install mysql-server
+  sudo mysql_secure_installation
+
+# php
+  sudo apt-get install php-fpm php-mysql
+
+# wordpress
+  wget https://wordpress.org/latest.tar.gz
+  tar -zxvf latest.tar.gz
+  sudo chown -R www-data:www-data wordpress
+  sudo chmod -R 755 wordpress
+
+# laravel for serverpilot
+  npm run prod                (build js and css)
+  composer install            (php related library)
+  php artisan migrate         (create mysql table)
+  php artisan migrate --seed  (migrate product and series data)
+```
+
+* [fix 1](https://wordpress.stackexchange.com/questions/253245/wordpress-migration-getting-404-errors-only-home-page-works)
+* [fix 2](https://sofree.cc/output_buffering/)
+* [laravel docs](https://docs.laravel-dojo.com/laravel/5.5/homestead)
+
 ### Redis
 
 #### install
